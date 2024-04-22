@@ -10,6 +10,7 @@ public class Book {
     public void turnPage(int input) {
         int minPages = 1;
         int result = 0;
+
         if (input > 0) {
             result = currentPage + input;
         } else if (input < 0) {
@@ -18,12 +19,12 @@ public class Book {
         if (result >= minPages && result <= pages){
             currentPage = result;
         } else {
-            System.out.println("Error");
+            System.out.println("Error the value should be between 1 and " + pages);
         }
 
     }
-    public void getTitle() {
-        System.out.println(this.title);
+    public String getTitle() {
+        return this.title;
     }
     public int getCurrentPage() {
         return currentPage;

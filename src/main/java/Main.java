@@ -13,6 +13,8 @@ public class Main {
        // book1.turnPage(-50);
        // System.out.println(book1.getCurrentPage());
 
+        System.out.println(book1.getTitle() + "  with current page" + book1.getCurrentPage());
+
 
 
     }
